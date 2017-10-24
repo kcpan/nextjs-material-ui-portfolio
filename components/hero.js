@@ -5,12 +5,11 @@ import Typography from 'material-ui/Typography';
 import withStyles from 'material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
 import Grid from 'material-ui/Grid';
-import Smile from './smile.js'
+import Smile from './smile.js';
+import V from './v.js';
+import K from './k.js';
 
 const styles = {
-  root: {
-    backgroundColor: '#101010'
-  },
   container: {
     width: '100%',
     height: '100vh',
@@ -25,32 +24,60 @@ const styles = {
     display: 'block'
   },
   button: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',    
-    position: 'absolute',
-    bottom: '5%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    left: 0,
-    right: 0
+    background: 'linear-gradient(45deg, #B60055 0%,#FE6B8B 45%, #FF8E53 90%)',
+    zIndex: 1    
   }
 };
 
 class Hero extends Component {
-  render() {
+  constructor(){
+    super();
+  }
 
+  lol=()=>{
+    window.document.getElementById('about').scrollIntoView({block: 'start', behavior: 'smooth'})
+  }
+
+  render() {
     var style = this.props.classes
+
     return (
-      <div className={style.root}>
+      <section>
         <Grid container spacing={24} align="center" justify="center" className={style.container}>
           <Grid item>
-            <Smile/>
+            <div className = "skew">
+              <K />
+            </div>
             <Typography type='display2' className={style.title}>Kevin Pan</Typography>
           </Grid>
         </Grid>
-        <Button fab className={style.button} color="primary">
+        <Button fab className={`${style.button} float`} color="primary" onClick={this.lol}>
           <Icon>keyboard_arrow_down</Icon>
         </Button>
-      </div>
+        <style jsx global>
+          {`
+            .float {
+              animation: float 2s ease-in-out infinite; 
+              position: absolute;
+              bottom: 5%;
+              margin-left: auto;
+              margin-right: auto;
+              left: 0;
+              right: 0
+            }
+            @keyframes float {
+                0% {
+                  transform: translatey(0px);
+                }
+                50% {
+                  transform: translatey(-15px);
+                }
+                100% {
+                  transform: translatey(0px);
+                }
+            }              
+          `}</style>
+      </section>
     );
   }
 }

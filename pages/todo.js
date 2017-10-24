@@ -7,14 +7,11 @@ import Typography from 'material-ui/Typography';
 import withStyles from 'material-ui/styles/withStyles';
 import withRoot from '../components/withRoot';
 import Hero from '../components/hero';
-import Art from '../components/art';
-import About from '../components/about';
 import NavBar from '../components/navBar';
 
 const styles = {
   root: {
-    width:"100%",
-    backgroundColor: '#101010'    
+    width:"100%"
   }
 };
 
@@ -24,8 +21,6 @@ class Index extends Component {
     return (
       <div className={this.props.classes.root}>
         <NavBar/>
-        <Hero/>
-        <About/>
       </div>
     );
   }
