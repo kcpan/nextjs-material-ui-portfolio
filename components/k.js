@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function k(props) {
   return (
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style={{enableBackground: 'new 0 0 500 500'}} xmlSpace="preserve" width={500} height={500} {...props}>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style={{enableBackground: 'new 0 0 500 500'}} xmlSpace="preserve" {...props}>
       <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{display:none;}\n\t.st1{display:inline;fill:#B60055;}\n\t.st2{fill:none;}\n\t.st3{fill:url(#XMLID_3_);}\n\t.st4{fill:url(#XMLID_4_);}\n\t.st5{fill:url(#XMLID_5_);}\n\t.st6{fill:url(#XMLID_6_);}\n\t.st7{fill:url(#XMLID_8_);}\n\t.st8{fill:url(#XMLID_31_);}\n\t.st9{fill:url(#XMLID_36_);}\n\t.st10{fill:url(#XMLID_37_);}\n\t.st11{fill:url(#XMLID_44_);}\n\t.st12{fill:url(#XMLID_45_);}\n\t.st13{fill:url(#XMLID_47_);}\n\t.st14{fill:url(#XMLID_48_);}\n\t.st15{fill:url(#XMLID_52_);}\n\t.st16{fill:url(#XMLID_53_);}\n\t.st17{fill:url(#XMLID_55_);}\n\t.st18{fill:url(#XMLID_57_);}\n\t.st19{fill:#C94780;}\n\t.st20{fill:url(#XMLID_58_);}\n\t.st21{fill:url(#XMLID_59_);}\n\t.st22{fill:url(#XMLID_60_);}\n\t.st23{opacity:0.39;fill:#F2F2F2;enable-background:new    ;}\n\t.st24{fill:url(#XMLID_62_);}\n\t.st25{fill:url(#XMLID_64_);}\n\t.st26{fill:url(#XMLID_65_);}\n\t.st27{fill:url(#XMLID_66_);}\n\t.st28{fill:url(#XMLID_68_);}\n\t.st29{fill:url(#XMLID_69_);}\n" }} />
       <g id="Layer_1_1_" className="st0">
         <path id="XMLID_15_" className="st1" d="M248.8,466c-0.8-10.8-40.8-78-51-121.3c-0.7-2.2-1.4-4.3-2-6.5c-1.3-4.1-2.4-8.3-3.5-12.4

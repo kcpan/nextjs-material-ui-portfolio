@@ -4,13 +4,16 @@ import Icon from 'material-ui/Icon';
 import Typography from 'material-ui/Typography';
 import withStyles from 'material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
-import Grid from 'material-ui/Grid';
+
 
 const styles = {
   container: {
     width: '100%',
     height: '100vh',
     margin: 0
+  },
+  card:{
+    width:'500px'
   }
 };
 
@@ -18,29 +21,26 @@ class About extends Component {
   render() {
 
     var style = this.props.classes
+    
     return (
       <section id='about'>
+        <div className='blurb'>Currently under construction. Feel free to check out my art on Behance.</div>
+        <a target="_blank" href="https://www.behance.net/thebigeZ"><img src="../static/behance.svg" className='logo'/></a>
         <style jsx global>
           {`     
             #about{
-              margin-top: 100px;
-              height:1000px;
+              height:100vh;
               overflow: hidden;
-              display: block;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-family: Roboto;
+              flex-direction: column;
             }
-            .stripe{
-              margin-top: 100px;
-              position: absolute;
-              width: 100%;
-              display: grid;
-              grid: repeat(4, 200px) / repeat(10, 1fr);
-              background-color: #EEEEEE;
-              transform: skewY(12deg);
-            }
-            .content{
-              z-index: 1;
-              color: red;
-              position: relative;
+            .logo{
+              margin-top: 15px;
+              width: 100px;
             }
           `}
         </style>

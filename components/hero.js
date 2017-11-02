@@ -16,7 +16,7 @@ const styles = {
     margin: 0
   },
   title:{
-    color: '#DFDFDF',
+    color: 'white',
     textAlign: 'center'
   },
   image:{
@@ -43,12 +43,12 @@ class Hero extends Component {
 
     return (
       <section>
-        <Grid container spacing={24} align="center" justify="center" className={style.container}>
-          <Grid item>
+        <Grid container spacing={24} alignItems="center" justify="center" className={style.container}>
+          <Grid item className='kBox'>
             <div className = "skew">
               <K />
             </div>
-            <Typography type='display2' className={style.title}>Kevin Pan</Typography>
+            <Typography type='display2' className={style.title}><black>KEVIN</black><light>PAN</light></Typography>
           </Grid>
         </Grid>
         <Button fab className={`${style.button} float`} color="primary" onClick={this.lol}>
@@ -75,7 +75,17 @@ class Hero extends Component {
                 100% {
                   transform: translatey(0px);
                 }
-            }              
+            }
+            black{
+              font-weight:900;
+            }
+            light{
+              font-weight:100;
+            }    
+            .kBox{
+              max-width:500px;
+              width:100%;
+            }          
           `}</style>
       </section>
     );
