@@ -4,6 +4,7 @@ import withStyles from 'material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
+import Link from 'next/link'
 
 const styles = {
   navBar: {
@@ -13,6 +14,11 @@ const styles = {
     marginRight: '24px',
     marginLeft: '24px',
     color: '#DFDFDF'
+  },
+  link: {
+      textDecoration: 'none',
+      color: '#DFDFDF',
+      transition: 'all 0.15s'
   }
 };
 
@@ -25,7 +31,9 @@ class NavBar extends Component {
         <Toolbar>
           <span className={style.navItem}>
             <Typography type="title" color="inherit">
-              About
+              <Link href="/todo">
+                <a className={style.link}>To-Do</a>
+              </Link>
             </Typography>
           </span>
           <span className={style.navItem}>
@@ -39,6 +47,11 @@ class NavBar extends Component {
             </Typography>
           </span>
         </Toolbar>
+        <style jsx global>{`
+          a:hover{
+            color: grey
+          }
+        `}</style>
       </AppBar>
     );
   }

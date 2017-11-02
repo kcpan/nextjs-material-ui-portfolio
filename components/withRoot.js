@@ -9,7 +9,7 @@ import getContext from '../styles/getContext';
 const styles = theme => ({
   '@global': {
     html: {
-      background: theme.palette.background.default,
+      backgroundColor: '#101010',
       WebkitFontSmoothing: 'antialiased', // Antialiasing.
       MozOsxFontSmoothing: 'grayscale', // Antialiasing.
     },
